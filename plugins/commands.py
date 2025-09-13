@@ -17,9 +17,9 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('MOVIE REQUEST GROUP', url='https://t.me/+kovCxUJo_2kzMGI1')
+            InlineKeyboardButton('MOVIE REQUEST GROUP', url="https://t.me/+kovCxUJo_2kzMGI1')
             ],[
-            InlineKeyboardButton('BACKUP', url='https://t.me/how_to_open_link204")
+            InlineKeyboardButton('BACKUP', url="https://t.me/how_to_open_link204")
         ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
