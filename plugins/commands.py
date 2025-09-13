@@ -17,7 +17,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('MOVIE REQUEST GROUP', url="https://t.me/+kovCxUJo_2kzMGI1')
+            InlineKeyboardButton('MOVIE REQUEST GROUP', url="https://t.me/+kovCxUJo_2kzMGI1")
             ],[
             InlineKeyboardButton('BACKUP', url="https://t.me/how_to_open_link204")
         ]]
